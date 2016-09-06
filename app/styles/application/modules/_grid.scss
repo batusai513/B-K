@@ -14,6 +14,10 @@
   @extend %grid--full;
 }
 
+.grid--narrow{
+  @extend %grid--narrow;
+}
+
 .grid__item{
 	@extend %grid__item;
 }
@@ -24,6 +28,22 @@
 
 .one-quarter{
   @extend %one-quarter;
+}
+
+.one-third{
+  @extend %one-third;
+}
+
+.two-thirds{
+  @extend %two-thirds;
+}
+
+.small--one-third{
+  @extend %small--one-third;
+}
+
+.small--two-thirds{
+  @extend %small--two-thirds;
 }
 
 .medium--one-third{
