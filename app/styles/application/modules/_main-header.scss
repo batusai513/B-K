@@ -1,5 +1,17 @@
 .main-header{
-	background-color: transparent;
+	background: rgba($brand-primary, 0.96);
 	width: 100%;
 	padding: $half-spacing-unit 0;
+  @media #{$medium} {
+    padding: $base-spacing-unit 0;
+  }
+  &--positioned{
+    position: absolute;
+  }
+  &__logo{
+    text-align: center;
+    @media #{$medium} {
+      text-align: $start;
+    }
+  }
 }

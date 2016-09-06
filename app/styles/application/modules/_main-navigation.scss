@@ -1,10 +1,25 @@
 .main-navigation{
-	font-family: $font-family-sans-serif;
+  @include rem(14);
+  margin-top: $half-spacing-unit;
+  text-align: center;
+	&__list{
+    margin-bottom: 0;
+  }
 	&__item{
 		&.is-active a{
 			background-color: $gray-light;
 			background-color: rgba($gray-light, 0.12);
 		}
 	}
-	&--index{}
+	&__link{
+    padding: 5px 3px;
+    color: white;
+    @media #{$medium} {
+      padding: 5px 8px;
+    }
+  }
+  @media #{$medium} {
+    margin-top: 0;
+    text-align: $end;
+  }
 }

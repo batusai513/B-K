@@ -25,3 +25,11 @@
 .one-quarter{
   @extend %one-quarter;
 }
+
+.medium--one-third{
+  @extend %medium--one-third;
+}
+
+.medium--two-thirds{
+  @extend %medium--two-thirds;
+}

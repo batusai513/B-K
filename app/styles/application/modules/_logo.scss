@@ -1,15 +1,12 @@
 .main-logo{
   font-size: 1em;
-  & > a{
-    @extend %main-sprite;
+  margin: 0;
+  &__link{
+    background: url('../images/logo-header.svg');
     @extend %image-replace;
-    background-position: -5px -6px;
-    width: 253px;
-    height: 39px;
-    @media #{$medium-max} {
-      height: 28px;
-      width: 181px;
-    }
+    display: inline-block;
+    width: 208px;
+    height: 66px;
   }
 }
 
