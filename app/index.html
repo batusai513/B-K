@@ -65,43 +65,71 @@
 
     <main>
       <section>
-        <h1 class="sr-only">Proyectos</h1>
-        <article>
-          <h1>Burano tower &amp; <br> Centro comercial Burano</h1>
-          <p>Santa Marta</p>
-          <a href="#">Visita el proyecto</a>
-        </article>
+        <div class="container">
+          <h1 class="sr-only">Proyectos</h1>
+          <article>
+            <h1>Burano tower &amp; <br> Centro comercial Burano</h1>
+            <p>Santa Marta</p>
+            <a href="#">Visita el proyecto</a>
+          </article>
+        </div>
       </section>
 
-      <div>
-        <h1>B&amp;K Contructors</h1>
-        <p>
-          Es una compañía integral de construcción y diseño para la construcción que desarrolla exitosamente proyectos en la costa Colombiana. Establecida en 2015, B&K Constructors cuenta con proyectos comerciales para negocio y de vivienda
-        </p>
+      <div class="pane text-center">
+        <div class="container">
+          <h1>B&amp;K Contructors</h1>
+          <p>
+            Es una compañía integral de construcción y diseño para la construcción que desarrolla exitosamente proyectos en la costa Colombiana. Establecida en 2015, B&K Constructors cuenta con proyectos comerciales para negocio y de vivienda
+          </p>
+        </div>
       </div>
 
-      <section>
-        <h2>Proyectos Destacados</h2>
-        <article>
-          <img src="" alt="">
-          <h2><span>Oficinas</span>HKM Travel Bogotá</h2>
-        </article>
-        <article>
-          <img src="" alt="">
-          <h2><span>Centro comercial</span> Mall 51 Barranquilla</h2>
-        </article>
-        <article>
-          <img src="" alt="">
-          <h2><span>Mezquita</span>Othman Ben Affan Barranquilla</h2>
-        </article>
-        <article>
-          <img src="" alt="">
-          <h2><span>Centro comercial y torre de vivienda</span>Burano Tower &amp; Centro Comercial Burano Santa Marta</h2>
-        </article>
-        <article>
-          <img src="" alt="">
-          <h2><span>Centro comercial</span>Tierra Santa Malambo</h2>
-        </article>
+      <section class="pane pane--medium pane--light">
+        <div class="container">
+          <h2 class="text-center epsilon">Proyectos Destacados</h2>
+          <div class="destacados">
+            <article class="destacado destacado--end" style="">
+              <div class="destacado__text">
+                <h2 class="destacado__title">
+                  <span class="destacado__small">Oficinas</span>HKM Travel <span class="destacado__city">Bogotá</span>
+                </h2>
+              </div>
+              <img src="images/destacado-hkm.jpg" alt="">
+            </article>
+            <article class="destacado" style="">
+              <div class="destacado__text">
+                <h2 class="destacado__title">
+                  <span class="destacado__small">Centro comercial</span> Mall 51 <span class="destacado__city">Barranquilla</span>
+                </h2>
+              </div>
+              <img src=images/destacado-mall-barranquilla.jpg"" alt="">
+            </article>
+            <article class="destacado destacado--end" style="">
+              <div class="destacado__text">
+                <h2 class="destacado__title">
+                  <span class="destacado__small">Centro comercial y torre de vivienda</span>Burano Tower &amp; Centro Comercial Burano <span class="destacado__city">Santa Marta</span>
+                </h2>
+              </div>
+              <img src="images/destacado-burano.jpg" alt="">
+            </article>
+            <article class="destacado" style="">
+              <div class="destacado__text">
+                <h2 class="destacado__title">
+                  <span class="destacado__small">Mezquita</span>Othman Ben Affan <span class="destacado__city">Barranquilla</span>
+                </h2>
+              </div>
+              <img src="images/destacado-othman.jpg" alt="">
+            </article>
+            <article class="destacado" style="">
+              <div class="destacado__text">
+                <h2 class="destacado__title">
+                  <span class="destacado__small">Centro comercial</span>Tierra Santa <span class="destacado__city">Malambo</span>
+                </h2>
+              </div>
+              <img src="images/destacado-tierra-santa-malambo.jpg" alt="">
+            </article>
+          </div>
+        </div>
       </section>
 
       <div>
@@ -178,6 +206,7 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/shufflejs/dist/shuffle.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

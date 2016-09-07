@@ -2,6 +2,10 @@
 	padding: $base-spacing-unit 0;
 }
 
+.pane--light{
+  background-color: $gray-lighter;
+}
+
 .pane--large{
 	@media #{$small} {
 		padding: $base-spacing-unit * 4 0;

@@ -1,0 +1,41 @@
+.destacados{
+  background-color: white;
+  margin: 8px;
+}
+
+.destacado{
+  @include rem;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-top: 8px;
+  position: relative;
+  &--end{
+    text-align: $end;
+  }
+  &__text{
+    padding: $base-spacing-unit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  &__title{
+    @include rem(30);
+    color: white;
+    margin: 0;
+    line-height: 1.1;
+  }
+  &__small{
+    display: block;
+    font-weight: 400;
+    font-size: em(19, 30);
+  }
+  &__city{
+    display: block;
+    font-size: em(25, 30)
+  }
+  img{
+    vertical-align: middle;
+    max-width: 100%;
+  }
+}

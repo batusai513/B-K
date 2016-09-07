@@ -4,10 +4,18 @@
   "dependencies": {
     "jquery": "~2.1.1",
     "modernizr": "~2.8.1",
-    "normalize-css": "normalize.css#^4.2.0"
+    "normalize-css": "normalize.css#^4.2.0",
+    "shufflejs": "^4.0.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.0.2"
+  },
+  "overrides": {
+    "shufflejs": {
+      "main": [
+        "dist/shuffle.js"
+      ]
+    }
   }
 }
