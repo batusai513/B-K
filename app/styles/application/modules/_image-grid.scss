@@ -5,13 +5,17 @@
 }
 
 .image-grid__container{
-	float: left;
 	position: relative;
 	&:before {
 	  display: block;
 	  content: " ";
 	  width: 100%;
-	  padding-bottom: (3/4) * 100%;
+	  padding-bottom: (296/458) * 100%;
+	}
+	&--large{
+		&:before{
+			padding-bottom: (594/458) * 100%;
+		}
 	}
 }
 
@@ -23,10 +27,8 @@
 	left: 3px;
 	right: 3px;
 	border: 1px solid $gray-lighter;
-	> *{
-		display: block;
-	}
 	&:after{
+		background-image: linear-gradient(rgba(black, 0.4), transparent);
 		background-position: bottom;
 		background-repeat: no-repeat;
 		background-size: 100% auto;
@@ -58,7 +60,7 @@
 
 .image-grid__content{
 	position: absolute;
-	bottom: 0;
+	top: 0;
 	z-index: 3;
 	padding: em($half-spacing-unit);
 	color: white;

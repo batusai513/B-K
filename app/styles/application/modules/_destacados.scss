@@ -5,10 +5,11 @@
 
 .destacado{
   @include rem;
-  padding-left: 8px;
-  padding-right: 8px;
-  margin-top: 8px;
   position: relative;
+  width: 100%;
+  @media #{$medium} {
+    width: 50%;
+  }
   &--end{
     text-align: $end;
   }
@@ -20,10 +21,13 @@
     right: 0;
   }
   &__title{
-    @include rem(30);
+    @include rem(20);
     color: white;
     margin: 0;
     line-height: 1.1;
+    @media #{$small} {
+      @include rem(30);
+    }
   }
   &__small{
     display: block;
