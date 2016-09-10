@@ -17,7 +17,10 @@
     font-size: em(30);
     line-height: 1.15;
     text-shadow: 0 2px 4px rgba(black, 0.45);
-    margin-bottom: $base-spacing-unit * 1.5;
+    margin-bottom: $base-spacing-unit * 2;
+    &:before{
+      box-shadow: 0 2px 4px rgba(black, 0.45);
+    }
     @media #{$medium} {
       font-size: em(55);
     }

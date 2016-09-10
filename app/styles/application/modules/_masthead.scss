@@ -1,9 +1,17 @@
 .masthead{
-	background-size: cover;
-	background-image: url('../images/main-hero-image.jpg');
-	background-attachment: fixed;
+  background-position: center;
 	border-bottom: 1px solid $gray-lighter;
 	margin-bottom: $base-spacing-unit;
 	color: white;
-	padding: em($base-spacing-unit * 2) 0;
+  padding-top: 115px;
+  @include rem(460px, height);
+  &__title{
+    text-shadow: 0 2px 4px rgba(black, 0.45);
+  }
+  &--nosotros{
+    background-image: url('../images/hero-nosotros.jpg');
+  }
+  &--servicios{
+    background-image: url('../images/hero-servicios.jpg');
+  }
 }
