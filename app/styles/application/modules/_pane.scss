@@ -21,3 +21,40 @@
 .pane--small{
 	padding: $base-spacing-unit * 2 0;
 }
+
+.pane-main{
+  @include rem;
+  &__title{
+    font-size: em($font-size-h3);
+    @media #{$small} {
+      font-size: em($font-size-h1);
+    }
+  }
+  &__text{
+    font-size: em(19);
+    max-width: 770px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    @media #{$small} {
+      font-size: em(26);
+    }
+  }
+}
+
+.pane-diseno{
+  @include rem;
+  background-image: url('../images/fondo-slogan.jpg');
+  color: white;
+  &__text{
+    font-size: em(22);
+    font-weight: 700;
+    line-height: 1.2;
+    @media #{$small} {
+      font-size: em(40);
+    }
+  }
+  &__extra{
+    font-size: em(35, 40);
+  }
+}

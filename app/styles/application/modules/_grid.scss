@@ -18,6 +18,10 @@
   @extend %grid--narrow;
 }
 
+.grid--wide{
+  @extend %grid--wide;
+}
+
 .grid__item{
 	@extend %grid__item;
 }
