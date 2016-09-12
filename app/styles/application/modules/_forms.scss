@@ -92,7 +92,7 @@ textarea.form-control{
 }
 
 .input--large {
-  @include input-size($input-height-large, $padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-large, $border-radius-base);
+  @include input-size($input-height-large, $padding-base-vertical, $padding-base-horizontal, $font-size-small, $line-height-large, 0);
 }
 
 

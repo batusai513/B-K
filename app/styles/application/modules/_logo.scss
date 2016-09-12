@@ -39,4 +39,10 @@
   box-shadow: 0 2px 4px rgba(black, 0.19);
   padding-top: 53px;
   padding-bottom: 53px;
+  &__light{
+    background-image: none;
+    background-color: white;
+    border: 1px solid #EBF0F5;
+    box-shadow: 10px 10px 25px rgba(#EBF0F5, 0.9);
+  }
 }

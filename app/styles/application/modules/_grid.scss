@@ -30,8 +30,16 @@
   @extend %one-half;
 }
 
+.small--one-half{
+  @extend %small--one-half;
+}
+
 .one-quarter{
   @extend %one-quarter;
+}
+
+.medium--one-quarter{
+  @extend %medium--one-quarter;
 }
 
 .one-third{
@@ -56,4 +64,12 @@
 
 .medium--two-thirds{
   @extend %medium--two-thirds;
+}
+
+.small--seven-twelfths{
+  @extend %small--seven-twelfths;
+}
+
+.small--five-twelfths{
+  @extend %small--five-twelfths;
 }
