@@ -1,15 +1,18 @@
 .main-header{
 	background: rgba($brand-primary, 0.96);
 	width: 100%;
-	padding: $half-spacing-unit 0;
+  padding: 0;
+  /*   padding: $half-spacing-unit 0;
   @media #{$medium} {
     padding: $base-spacing-unit 0;
-  }
+  } */
   &--positioned{
     position: absolute;
   }
   &__logo{
     text-align: center;
+    padding-top: $base-spacing-unit;
+    padding-bottom: $base-spacing-unit;
     @media #{$medium} {
       text-align: $start;
     }

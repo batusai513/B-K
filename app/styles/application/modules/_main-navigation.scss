@@ -1,3 +1,7 @@
+$header-height: 115px;
+$link-height: 16px;
+$link-padding: ($header-height / 2) - ($link-height / 2);
+
 .main-navigation{
   @include rem(14);
   margin-top: $half-spacing-unit;
@@ -14,12 +18,28 @@
 	&__link{
     padding: 5px 3px;
     color: white;
+    display: block;
     @media #{$medium} {
-      padding: 5px 8px;
+      padding-top: $link-padding;
+    }
+    @media #{$large} {
+      padding-left: 13px;
+      padding-right: 13px;
     }
   }
   @media #{$medium} {
     margin-top: 0;
     text-align: $end;
+  }
+  &__drop{
+    background-color: gray;
+    >li>a{
+      padding: 4px 6px;
+    }
+  }
+  &__dropdown{
+    &:hover{
+      background-color: gray;
+    }
   }
 }
