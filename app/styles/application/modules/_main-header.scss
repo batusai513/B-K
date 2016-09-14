@@ -1,20 +1,31 @@
 .main-header{
+  background-color: $brand-primary;
 	background: rgba($brand-primary, 0.96);
 	width: 100%;
   padding: 0;
-  /*   padding: $half-spacing-unit 0;
-  @media #{$medium} {
-    padding: $base-spacing-unit 0;
-  } */
+  height: 48px;
+  transition: background 0.35s linear,height 0.35s ease-in 200ms;
   &--positioned{
     position: absolute;
+    z-index: 1;
   }
   &__logo{
     text-align: center;
-    padding-top: $base-spacing-unit;
-    padding-bottom: $base-spacing-unit;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    .main-logo__link{
+      @media #{$medium-max} {
+        width: 108px;
+        height: 33px; 
+      }
+    }
     @media #{$medium} {
       text-align: $start;
+      padding-top: $base-spacing-unit;
+      padding-bottom: $base-spacing-unit;
     }
+  }
+  @media #{$medium} {
+    height: auto;
   }
 }

@@ -3,12 +3,10 @@
   &__drop{
     text-align: left;
     position: absolute;
+    display: none;
     width: 100%;
   }
   &--hover{
-    .dropdown__drop{
-      display: none;
-    }
     &:hover{
       .dropdown__drop{
         display: block;

@@ -6,6 +6,17 @@ $link-padding: ($header-height / 2) - ($link-height / 2);
   @include rem(14);
   margin-top: $half-spacing-unit;
   text-align: center;
+  position: absolute;
+  top: 48px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  visibility: hidden;
+  @media #{$medium} {
+    position: static;
+    width: auto;
+    visibility: visible;
+  }
 	&__list{
     margin-bottom: 0;
   }
@@ -14,6 +25,10 @@ $link-padding: ($header-height / 2) - ($link-height / 2);
 			background-color: $gray-light;
 			background-color: rgba($gray-light, 0.12);
 		}
+    @media #{$medium-max} {
+      font-size: em(22);
+      display: list-item;
+    }
 	}
 	&__link{
     padding: 5px 3px;
@@ -32,14 +47,23 @@ $link-padding: ($header-height / 2) - ($link-height / 2);
     text-align: $end;
   }
   &__drop{
-    background-color: gray;
+    @media #{$medium} {
+      background-color: gray;
+    }
     >li>a{
       padding: 4px 6px;
+    }
+    @media #{$medium-max} {
+      display: block;
+      position: static;
+      text-align: center;
     }
   }
   &__dropdown{
     &:hover{
-      background-color: gray;
+      @media #{$medium} {
+        background-color: gray; 
+      }
     }
   }
 }
