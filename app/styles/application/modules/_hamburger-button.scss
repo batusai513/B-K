@@ -4,7 +4,8 @@ $separation-ratio: floor($block-size / 20);
 $separation: (($line-height * 2) + $separation-ratio) * 1px;
 
 .hamburger-menu{
-  background-color: #87BEBF;
+  background-color: transparent;
+  // display: block;
   position: relative;
   margin: 0;
   padding: 0;
@@ -16,6 +17,7 @@ $separation: (($line-height * 2) + $separation-ratio) * 1px;
   white-space: nowrap;
   -webkit-appearance: none;
   transition: background 0.3s;
+  cursor: pointer;
 }
 
 .hamburger-menu__line{
@@ -45,7 +47,7 @@ $separation: (($line-height * 2) + $separation-ratio) * 1px;
 }
 
 .hamburger-xclose{
-  background-color: #87BEBF;
+  background-color: transparent;
   .hamburger-menu__line{
     transition: background 0s 0.3s;
     &:before,
@@ -61,7 +63,7 @@ $separation: (($line-height * 2) + $separation-ratio) * 1px;
     }
   }
   &.active{
-    background-color: darken(#87BEBF, 5%);
+    background-color: transparent;
     .hamburger-menu__line{
       background: none;
       &:before{
