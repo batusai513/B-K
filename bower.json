@@ -6,7 +6,8 @@
     "modernizr": "~2.8.1",
     "normalize-css": "normalize.css#^4.2.0",
     "shufflejs": "^4.0.1",
-    "waypoints": "^4.0.1"
+    "waypoints": "^4.0.1",
+    "magnific-popup": "^1.1.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
@@ -16,6 +17,13 @@
     "shufflejs": {
       "main": [
         "dist/shuffle.js"
+      ]
+    },
+    "waypoints": {
+      "main": [
+        "lib/noframework.waypoints.js",
+        "lib/shortcuts/sticky.js",
+        "lib/shortcuts/inview.js"
       ]
     }
   }
