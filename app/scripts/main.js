@@ -1,5 +1,5 @@
 // prefixer helper function
-var pfx = ["webkit", "moz", "MS", "o", ""];
+var pfx = ['webkit', 'moz', 'MS', 'o', ''];
 function prefixedEventListener(element, type, callback) {
   for (var p = 0; p < pfx.length; p++) {
     if (!pfx[p]) type = type.toLowerCase();

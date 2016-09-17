@@ -8,25 +8,25 @@ var MapFactory = (function map(window, $){
     //   ]
     // },
     {
-    featureType: "poi",
+    featureType: 'poi',
     stylers: [
-      { visibility: "on" }
+      { visibility: 'on' }
     ]
     },{
-    featureType: "transit",
+    featureType: 'transit',
     stylers: [
-      { visibility: "on" }
+      { visibility: 'on' }
     ]
     },{
-    featureType: "road",
+    featureType: 'road',
     stylers: [
-      { lightness: "50" },
-      { visibility: "on" }
+      { lightness: '50' },
+      { visibility: 'on' }
     ]
     },{
-    featureType: "landscape",
+    featureType: 'landscape',
     stylers: [
-      { lightness: "50" }
+      { lightness: '50' }
     ]
     }
   ];
