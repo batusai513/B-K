@@ -22,6 +22,7 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
   </head>
   <body>
     <!--[if lt IE 10]>
@@ -77,6 +78,10 @@
         </div>
       </div>
 
+    <section class="pane pane--map" id="map-canvas">
+      <h1 class="sr-only">Ubicacion en el mapa</h1>
+    </section>
+
       <section class="pane pane--light pane--small">
         <div class="container container--small">
           <h2 class="sr-only">Formulario de contacto</h2>
@@ -115,20 +120,22 @@
             </div>
             <input type="submit" class="button button--large button--info button--wide" value="Enviar">
           </form>
+        </div>
+        <div class="container">
           <hr class="rule">
           <div class="text-center">
             <p>Redes Sociales</p>
-            <a class="" href="#">
+            <a title="facebook" class="social-icon" href="#">
               <svg class="icon icon-facebook icon-2x">
                 <use xlink:href="symbol-defs.svg#icon-facebook"></use>
               </svg>
             </a>
-            <a class="" href="#">
+            <a title="twitter" class="social-icon" href="#">
               <svg class="icon icon-twitter icon-2x">
                 <use xlink:href="symbol-defs.svg#icon-twitter"></use>
               </svg>
             </a>
-            <a class="" href="#">
+            <a title="instagram" class="social-icon" href="#">
               <svg class="icon icon-instagram icon-2x">
                 <use xlink:href="symbol-defs.svg#icon-instagram"></use>
               </svg>
@@ -171,15 +178,27 @@
                 </div><div class="grid__item small--one-third">
                   <h2 class="epsilon color-white flush--top">Legal</h2>
                   <p>
-                    Terminos y condiciones de uso
+                    <a href="/terminos.html">Terminos y condiciones de uso</a>
                   </p>
                   <h2 class="epsilon color-white flush--top">Elaborado por:</h2>
                   <img src="images/logo-click.svg" alt="Click">
                 </div><div class="grid__item small--one-third">
                   <h2 class="epsilon color-white flush--top">Redes Sociales</h2>
-                  <a href="">Facebook</a>
-                  <a href="">Twitter</a>
-                  <a href="">Instagram</a>
+                  <a title="facebook" class="social-icon" href="#">
+                    <svg class="icon icon-facebook icon-lg">
+                      <use xlink:href="symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                  <a title="twitter" class="social-icon" href="#">
+                    <svg class="icon icon-twitter icon-lg">
+                      <use xlink:href="symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                  <a title="instagram" class="social-icon" href="#">
+                    <svg class="icon icon-instagram icon-lg">
+                      <use xlink:href="symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
@@ -210,6 +229,7 @@
 
     <!-- build:js scripts/main.js -->
     <script src="scripts/svgxuse.js"></script>
+    <script src="scripts/map.js"></script>
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
   </body>

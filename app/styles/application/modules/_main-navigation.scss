@@ -15,7 +15,10 @@ $link-padding: ($header-height / 2) - ($link-height / 2);
   transition: opacity 0.35s ease-out 0.45s;
   .is-open &{
     opacity: 1;
-    overflow-y: visible;
+    overflow-y: auto;
+    @media #{$medium} {
+      overflow-y: visible;
+    }
   }
   @media #{$medium} {
     position: static;
@@ -37,15 +40,15 @@ $link-padding: ($header-height / 2) - ($link-height / 2);
     }
 	}
 	&__link{
-    padding: 5px 3px;
+    padding: 5px 8px;
     color: white;
     display: block;
     @media #{$medium} {
       padding-top: $link-padding;
     }
     @media #{$large} {
-      padding-left: 13px;
-      padding-right: 13px;
+      padding-left: 16px;
+      padding-right: 16px;
     }
   }
   @media #{$medium} {
@@ -53,11 +56,14 @@ $link-padding: ($header-height / 2) - ($link-height / 2);
     text-align: $end;
   }
   &__drop{
+    color: white;
     @media #{$medium} {
-      background-color: gray;
+      background-color: #3A3E40;
     }
     > li > a{
       padding: 4px 6px;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
     @media #{$medium-max} {
       display: block;
@@ -68,7 +74,7 @@ $link-padding: ($header-height / 2) - ($link-height / 2);
   &__dropdown{
     &:hover{
       @media #{$medium} {
-        background-color: gray; 
+        background-color: #3A3E40;
       }
     }
   }

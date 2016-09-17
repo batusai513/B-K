@@ -20,8 +20,14 @@ $(() => {
     $el.toggleClass('active');
     $html.toggleClass('is-open');
   });
+
+  var map = MapFactory('#map-canvas');
 });
 
-var shuffle = new shuffle(document.querySelector('.destacados'), {
-  itemSelector: '.destacado'
-});
+var destacados = document.querySelector('.destacados')
+
+if(destacados){
+  var shuffle = new shuffle(destacados, {
+    itemSelector: '.destacado'
+  });
+}
