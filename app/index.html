@@ -22,6 +22,7 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVLPvBmaLfjUI0ri3dy9S9fi43OlXLfQY" type="text/javascript"></script>
   </head>
   <body>
     <!--[if lt IE 10]>
@@ -242,12 +243,16 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
     <script src="/bower_components/shufflejs/dist/shuffle.js"></script>
+    <script src="/bower_components/waypoints/lib/noframework.waypoints.js"></script>
+    <script src="/bower_components/waypoints/lib/shortcuts/sticky.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
     <script src="scripts/svgxuse.js"></script>
+    <script src="scripts/map.js"></script>
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
   </body>

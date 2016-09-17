@@ -15,6 +15,20 @@ prefixedEventListener(monkey,"AnimationStart",function(e){
 var $html = $('html');
 
 $(() => {
+
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+
   $('.js-menu-button').on('click', (e) => {
     var $el = $(e.currentTarget);
     $el.toggleClass('active');
@@ -22,6 +36,31 @@ $(() => {
   });
 
   var map = MapFactory('#map-canvas');
+  var $stikyNav = $('#sticky-container');
+  var $navItems = $stikyNav.find('.horizontal-nav__item');
+  var $projects = $('.inview-project');
+
+  if($stikyNav.length){
+    var sticky = new Waypoint.Sticky({
+      element: $stikyNav[0]
+    });
+  }
+
+  if($projects.length){
+    $projects.each(function(item, el){
+      var inview = new Waypoint.Inview({
+        element: el,
+        enter: function(direction) {
+          var $el = $(el);
+          var id = $el.attr('id');
+          var $currentNavItem = $navItems.find(`[href="#${id}"]`).parent();
+          $navItems.removeClass('is-active');
+          $currentNavItem.addClass('is-active');
+        }
+      });
+    });
+  }
+
 });
 
 var destacados = document.querySelector('.destacados')

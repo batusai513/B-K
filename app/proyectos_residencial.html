@@ -22,6 +22,7 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVLPvBmaLfjUI0ri3dy9S9fi43OlXLfQY" type="text/javascript"></script>
   </head>
   <body>
     <!--[if lt IE 10]>
@@ -90,7 +91,7 @@
         <h2 class="sr-only">
           Listado de proyectos Retail
         </h2>
-        <article class="pane pane--small pane--light" id="burano">
+        <article class="pane pane--small">
           <div class="container">
             <h2>Burano Tower & Centro Comercial Burano Santa Marta</h2>
             <p>
@@ -145,7 +146,7 @@
             <section>
               <h2 class="epsilon">Ficha Tecnica</h2>
               <article class="index-card index-card--bordered">
-                <h3 class="zeta uppercase bold">DESCRIPCION GENERAL TORRE VIVIENDA</h3>
+                <h3 class="zeta uppercase bold">DESCRIPCION GENERAL BURANO TOWER</h3>
                 <div class="index-card__container">
                   <div class="index-card__item">
                     <table class="index-card__table">
@@ -218,7 +219,7 @@
                 </div>
               </article>
               <article class="index-card">
-                <h3 class="zeta uppercase bold">DESCRIPCION GENERAL TORRE VIVIENDA</h3>
+                <h3 class="zeta uppercase bold">DESCRIPCION GENERAL CENTRO COMERCIAL BURANO</h3>
                 <div class="index-card__container">
                   <div class="index-card__item">
                     <table class="index-card__table">
@@ -259,30 +260,17 @@
                     </table>
                   </div>
                   <div class="index-card__item">
-                    <table class="index-card__table">
-                      <tbody>
-                        <tr>
-                          <th>Torres</th>
-                          <td>1 Torre</td>
-                        </tr>
-                        <tr>
-                          <th>Pisos</th>
-                          <td>17 Pisos</td>
-                        </tr>
-                        <tr>
-                          <th>Aptos. Por piso</th>
-                          <td>10 Aptos</td>
-                        </tr>
-                        <tr>
-                          <th>Parqueaderos</th>
-                          <td>160 Unidades</td>
-                        </tr>
-                        <tr>
-                          <th>Pisos de parqueaderos</th>
-                          <td>6 Pisos</td>
-                        </tr>
-                      </tbody>
-                    </table>
+                    <dl>
+                      <dt>Locales</dt>
+                      <dd>Locales con doble altura (7m)</dd>
+                      <dd>Mezzanine</dd>
+                      <dd>Área desde 21m2</dd>
+                    </dl>
+                    <dl>
+                      <dt>plaza de cómidas</dt>
+                      <dd>Ubicada en el 3er piso</dd>
+                      <dd>Capacidad de 230 sillas</dd>
+                    </dl>
                   </div>
                   <div class="index-card__item">
                     <dl>
@@ -377,12 +365,16 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
     <script src="/bower_components/shufflejs/dist/shuffle.js"></script>
+    <script src="/bower_components/waypoints/lib/noframework.waypoints.js"></script>
+    <script src="/bower_components/waypoints/lib/shortcuts/sticky.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
     <script src="scripts/svgxuse.js"></script>
+    <script src="scripts/map.js"></script>
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
   </body>
