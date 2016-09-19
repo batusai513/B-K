@@ -19,4 +19,10 @@
     padding-top: em($base-spacing-unit);
     padding-bottom: em($base-spacing-unit);
   }
+  &__item-card{
+    display: none;
+    @media #{$medium} {
+      display: block;
+    }
+  }
 }

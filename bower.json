@@ -7,7 +7,8 @@
     "normalize-css": "normalize.css#^4.2.0",
     "shufflejs": "^4.0.1",
     "waypoints": "^4.0.1",
-    "magnific-popup": "^1.1.0"
+    "magnific-popup": "^1.1.0",
+    "slick-carousel": "^1.6.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
@@ -24,6 +25,15 @@
         "lib/noframework.waypoints.js",
         "lib/shortcuts/sticky.js",
         "lib/shortcuts/inview.js"
+      ]
+    },
+    "slick": {
+      "main": [
+        "slick/slick.js",
+        "slick/slick-theme.css",
+        "slick/slick.css",
+        "slick/slick.less",
+        "slick/slick.scss"
       ]
     }
   }

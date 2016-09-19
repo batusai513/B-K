@@ -1,4 +1,5 @@
 // prefixer helper function
+'use strict';
 var pfx = ['webkit', 'moz', 'MS', 'o', ''];
 function prefixedEventListener(element, type, callback) {
   for (var p = 0; p < pfx.length; p++) {
@@ -68,7 +69,7 @@ $(() => {
     closeBtnInside: false,
     mainClass: 'mfp-with-zoom mfp-img-mobile',
     image: {
-      // verticalFit: true,
+      verticalFit: true
       // titleSrc: function(item) {
       //   return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
       // }
@@ -83,6 +84,13 @@ $(() => {
         return element.find('img');
       }
     }
+  });
+
+  $('.main-slider').slick({
+    autoplay: true,
+    dots: true,
+    arrows: false,
+    fade: true
   });
 
 });

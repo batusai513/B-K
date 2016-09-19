@@ -1,5 +1,6 @@
-/* jshint ignore:start */
-var MapFactory = (function map(window, $){
+'use strict';
+
+window.MapFactory = (function map(window, $){
   var mapStyles =[
     // {
     // stylers: [
@@ -55,4 +56,3 @@ var MapFactory = (function map(window, $){
 
     return init;
 })(window, jQuery);
-/* jshint ignore:end */
