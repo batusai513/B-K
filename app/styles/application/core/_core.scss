@@ -21,7 +21,7 @@ body {
   line-height: $line-height-base;
   color: $color-text-body;
   background-color: $body-bg;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 // Reset fonts for relevant elements
@@ -71,4 +71,9 @@ dl{
 
 img{
   max-width: 100%;
+}
+
+.more-link,
+.read-less{
+  color: $brand-info;
 }

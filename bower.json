@@ -8,7 +8,8 @@
     "shufflejs": "^4.0.1",
     "waypoints": "^4.0.1",
     "magnific-popup": "^1.1.0",
-    "slick-carousel": "^1.6.0"
+    "slick-carousel": "^1.6.0",
+    "readmore-js": "^2.2.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
@@ -27,13 +28,14 @@
         "lib/shortcuts/inview.js"
       ]
     },
-    "slick": {
+    "slick-carousel": {
       "main": [
         "slick/slick.js",
-        "slick/slick-theme.css",
-        "slick/slick.css",
         "slick/slick.less",
-        "slick/slick.scss"
+        "slick/slick.scss",
+        "slick/slick-theme.less",
+        "slick/slick-theme.scss",
+        "slick/fonts/*"
       ]
     }
   }

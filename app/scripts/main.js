@@ -17,6 +17,23 @@ var $html = $('html');
 
 $(() => {
 
+  var $readmore = $('.readmore');
+
+  if($readmore.length){
+    $readmore.each(function(index, el){
+      var $el = $(el);
+      var $firstParagraph = $el.children('p').first();
+      var paragraphText = $firstParagraph.text().trim();
+      var wordCount = paragraphText.length + 1 ||  180;
+      $el.expander({
+        slicePoint: wordCount,
+        expandText: 'Leer más',
+        expandPrefix: '&hellip;',
+        userCollapseText: 'Leer menos'
+      });
+    });
+  }
+
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -62,29 +79,34 @@ $(() => {
     });
   }
 
-  $('.zoom-gallery').magnificPopup({
-    delegate: 'a',
-    type: 'image',
-    closeOnContentClick: false,
-    closeBtnInside: false,
-    mainClass: 'mfp-with-zoom mfp-img-mobile',
-    image: {
-      verticalFit: true
-      // titleSrc: function(item) {
-      //   return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
-      // }
-    },
-    gallery: {
-      enabled: true
-    },
-    zoom: {
-      enabled: true,
-      duration: 300, // don't foget to change the duration also in CSS
-      opener: function(element) {
-        return element.find('img');
-      }
-    }
-  });
+  var $zoomGalery = $('.zoom-gallery');
+  if($zoomGalery.length){
+    $('.zoom-gallery').each((index, item) => {
+      $(item).magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        closeOnContentClick: false,
+        closeBtnInside: false,
+        mainClass: 'mfp-with-zoom mfp-img-mobile',
+        image: {
+          verticalFit: true
+          // titleSrc: function(item) {
+          //   return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
+          // }
+        },
+        gallery: {
+          enabled: true
+        },
+        zoom: {
+          enabled: true,
+          duration: 300, // don't foget to change the duration also in CSS
+          opener: function(element) {
+            return element.find('img');
+          }
+        }
+      });
+    });
+  }
 
   $('.main-slider').slick({
     autoplay: true,
