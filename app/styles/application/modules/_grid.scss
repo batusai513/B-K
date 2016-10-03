@@ -38,6 +38,13 @@
   @extend %one-quarter;
 }
 
+.small--one-quarter{
+  @extend %small--one-quarter;
+}
+.small--three-quarters{
+  @extend %medium--three-quarters;
+}
+
 .medium--one-quarter{
   @extend %medium--one-quarter;
 }

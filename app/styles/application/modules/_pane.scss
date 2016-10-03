@@ -23,6 +23,10 @@
 	padding: $base-spacing-unit * 2 0;
 }
 
+.pane--project{
+  background-color: #F8FAFB;
+}
+
 .pane-main{
   @include rem;
   &__title{
